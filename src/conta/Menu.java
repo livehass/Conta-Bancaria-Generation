@@ -32,7 +32,7 @@ public class Menu {
 
 			op = sc.nextInt();
 			if (op == 9) {
-				System.out.println("BANCO DA GENERATION - LIDER NO SEGUIMENTO");
+				System.out.println("          BANCO DA GENERATION - LIDER NO SEGUIMENTO");
 				sobre();
 				sc.close();
 				System.exit(0);
@@ -72,7 +72,11 @@ public class Menu {
 	}
 
 	private static void sobre() {
-		// TODO Auto-generated method stub
+		System.out.println("***********************************************************\n"
+				+ "*      Projeto Desenvolvido por: Jorge Felipe             *\n"
+				+ "*      Generation Brasil - generation@generation.org      *\n"
+				+ "*      github.com/conteudoGeneration                      *\n"
+				+ "***********************************************************\n");
 
 	}
 
