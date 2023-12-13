@@ -2,6 +2,8 @@ package conta;
 
 import java.util.Scanner;
 
+import conta.util.Cores;
+
 public class Menu {
 
 	public static void main(String[] args) {
@@ -10,7 +12,8 @@ public class Menu {
 		int op;
 
 		while (true) {
-			System.out.println("***********************************************************\n"
+			System.out.println(Cores.TEXT_YELLOW + Cores.ANSI_BLACK_BACKGROUND
+					+"***********************************************************\n"
 					+ "*			                                  *\n"
 					+ "*-------------------BANCO-DA-GENERETION-------------------*\n"
 					+ "*			                                  *\n"
