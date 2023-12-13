@@ -31,42 +31,43 @@ public class Menu {
 					+ "*			                                  *\n"
 					+ "***********************************************************\n"
 					+ "*              Entre com a opção desejada                 *\n"
-					+ "***********************************************************\n");
+					+ "***********************************************************\n"
+					+Cores.TEXT_RESET);
 
 			op = sc.nextInt();
 			if (op == 9) {
-				System.out.println("          BANCO DA GENERATION - LIDER NO SEGUIMENTO");
+				System.out.println(Cores.TEXT_WHITE_BOLD+"          BANCO DA GENERATION - LIDER NO SEGUIMENTO");
 				sobre();
 				sc.close();
 				System.exit(0);
 			}
 			switch (op) {
 			case 1:
-				System.out.println("Criar conta \n\n");
+				System.out.println(Cores.TEXT_WHITE_BOLD+"Criar conta \n\n");
 				break;
 			case 2:
-				System.out.println("Listar todas as contas \n\n");
+				System.out.println(Cores.TEXT_WHITE_BOLD+Cores.TEXT_WHITE_BOLD+"Listar todas as contas \n\n");
 				break;
 			case 3:
-				System.out.println("Consultar todas as contas - por número\n\n");
+				System.out.println(Cores.TEXT_WHITE_BOLD+"Consultar todas as contas - por número\n\n");
 				break;
 			case 4:
-				System.out.println("Atualizar dados da conta \n\n");
+				System.out.println(Cores.TEXT_WHITE_BOLD+"Atualizar dados da conta \n\n");
 				break;
 			case 5:
-				System.out.println("Apagar conta\n\n");
+				System.out.println(Cores.TEXT_WHITE_BOLD+"Apagar conta\n\n");
 				break;
 			case 6:
-				System.out.println("Sacar do saldo em conta \n\n");
+				System.out.println(Cores.TEXT_WHITE_BOLD+"Sacar do saldo em conta \n\n");
 				break;
 			case 7:
-				System.out.println("Depositar em conta\n\n");
+				System.out.println(Cores.TEXT_WHITE_BOLD+"Depositar em conta\n\n");
 				break;
 			case 8:
-				System.out.println("Transferir valores entre contas \n\n");
+				System.out.println(Cores.TEXT_WHITE_BOLD+"Transferir valores entre contas \n\n");
 				break;
 			default:
-				System.out.println("Opção Inválida");
+				System.out.println(Cores.TEXT_WHITE_BOLD+"Opção Inválida");
 				break;
 			}
 
