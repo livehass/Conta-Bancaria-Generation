@@ -2,7 +2,6 @@ package conta;
 
 import java.util.Scanner;
 
-import conta.model.Conta;
 import conta.model.ContaCorrente;
 import conta.model.ContaPoupanca;
 import conta.util.Cores;
@@ -15,7 +14,7 @@ public class Menu {
 		ContaPoupanca novoteste = new ContaPoupanca("Conta poupança teste ok: ", true);
 		novoteste.TestContaPoupanca();
 		
-		ContaCorrente novoteste2 = new ContaCorrente("Conta corrente teste ok:", false);
+		ContaCorrente novoteste2 = new ContaCorrente("Conta corrente teste ok: ", false);
 		novoteste2.testaContaCorrente();
 		
 		

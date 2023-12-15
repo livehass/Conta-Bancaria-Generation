@@ -27,6 +27,6 @@ public class ContaPoupanca {
 		TesteOkContaPoupanca = testeOkContaPoupanca;
 	}
 	public void TestContaPoupanca() {
-		System.out.println("Conta poupança:"+this.testeContaPoupanca+"Teste Conta Poupança:" +this.TesteOkContaPoupanca);
+		System.out.println(this.testeContaPoupanca+this.TesteOkContaPoupanca);
 	}
 }

@@ -3,13 +3,13 @@ package conta.model;
 public class ContaCorrente {
 
 	private String contaCorrente;
-	private Boolean testeOkContaCOrrente;
+	private Boolean testeOkContaCorrente;
 	
 	
 	public ContaCorrente(String contaCorrente, Boolean testeOkContaCOrrente) {
 		super();
 		this.contaCorrente = contaCorrente;
-		this.testeOkContaCOrrente = testeOkContaCOrrente;
+		this.testeOkContaCorrente = testeOkContaCOrrente;
 	}
 
 
@@ -24,15 +24,15 @@ public class ContaCorrente {
 
 
 	public Boolean getTesteOkContaCOrrente() {
-		return testeOkContaCOrrente;
+		return testeOkContaCorrente;
 	}
 
 
 	public void setTesteOkContaCOrrente(Boolean testeOkContaCOrrente) {
-		this.testeOkContaCOrrente = testeOkContaCOrrente;
+		this.testeOkContaCorrente = testeOkContaCOrrente;
 	}
 	
 	public void testaContaCorrente() {
-		System.out.println("Conta Corrente"+ this.contaCorrente+"Teste Conta Corrente:"+ this.testeOkContaCOrrente);
+		System.out.println(this.contaCorrente + this.testeOkContaCorrente);
 	}
 }
