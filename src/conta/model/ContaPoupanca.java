@@ -1,32 +1,26 @@
 package conta.model;
 
-public class ContaPoupanca {
-
-	private String testeContaPoupanca;
-	private Boolean TesteOkContaPoupanca;
-
-	public ContaPoupanca(String testeContaPoupanca, Boolean testeOkContaPoupanca) {
-		super();
-		this.testeContaPoupanca = testeContaPoupanca;
-		TesteOkContaPoupanca = testeOkContaPoupanca;
+public class ContaPoupanca extends Conta {
+	
+	private int aniversario;
+	
+	public ContaPoupanca(int numero, int agencia, int tipo, String titular, float saldo, int aniversario) {
+		super(numero, agencia, tipo, titular, saldo);
+		
+		this.aniversario = aniversario;
 	}
 
-	public String getTesteContaPoupanca() {
-		return testeContaPoupanca;
+	public int getAniversario() {
+		return aniversario;
 	}
 
-	public void setTesteContaPoupanca(String testeContaPoupanca) {
-		this.testeContaPoupanca = testeContaPoupanca;
+	public void setAniversario(int aniversario) {
+		this.aniversario = aniversario;
 	}
-
-	public Boolean getTesteOkContaPoupanca() {
-		return TesteOkContaPoupanca;
+	@Override
+	public void visualizar() {
+		super.visualizar();
+		System.out.println("Aniversário da conta:" + this.aniversario);
 	}
-
-	public void setTesteOkContaPoupanca(Boolean testeOkContaPoupanca) {
-		TesteOkContaPoupanca = testeOkContaPoupanca;
-	}
-	public void TestContaPoupanca() {
-		System.out.println(this.testeContaPoupanca+this.TesteOkContaPoupanca);
-	}
+	
 }

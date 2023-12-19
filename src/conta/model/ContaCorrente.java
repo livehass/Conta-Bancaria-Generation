@@ -1,38 +1,39 @@
 package conta.model;
 
-public class ContaCorrente {
+public class ContaCorrente extends Conta{
 
-	private String contaCorrente;
-	private Boolean testeOkContaCorrente;
-	
-	
-	public ContaCorrente(String contaCorrente, Boolean testeOkContaCOrrente) {
-		super();
-		this.contaCorrente = contaCorrente;
-		this.testeOkContaCorrente = testeOkContaCOrrente;
-	}
+	private float limite;
 
-
-	public String getContaCorrente() {
-		return contaCorrente;
-	}
-
-
-	public void setContaCorrente(String contaCorrente) {
-		this.contaCorrente = contaCorrente;
-	}
-
-
-	public Boolean getTesteOkContaCOrrente() {
-		return testeOkContaCorrente;
-	}
-
-
-	public void setTesteOkContaCOrrente(Boolean testeOkContaCOrrente) {
-		this.testeOkContaCorrente = testeOkContaCOrrente;
+	public ContaCorrente(int numero, int agencia, int tipo, String titular, float saldo, float limite) {
+		super(numero, agencia, tipo, titular, saldo);
+		this.limite = limite;
 	}
 	
-	public void testaContaCorrente() {
-		System.out.println(this.contaCorrente + this.testeOkContaCorrente);
+	public float getLimite() {
+		return limite;
 	}
+
+	public void setLimite(float limite) {
+		this.limite = limite;
+	}
+
+	@Override
+	public boolean sacar(float valor) { 
+		
+		if(this.getSaldo() + this.getLimite() < valor) {
+			System.out.println("\n Saldo Insuficiente!");
+			return false;
+		}
+		
+		this.setSaldo(this.getSaldo() - valor);
+		return true;
+		
+	}
+	
+    @Override
+	public void visualizar() {
+		super.visualizar();
+		System.out.println("Limite de Crédito: " + this.limite);
+	}
+    
 }
